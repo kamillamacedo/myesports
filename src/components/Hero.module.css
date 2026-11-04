@@ -1,0 +1,46 @@
+.homeHero {
+  display: flex;
+  flex-direction: column;
+  height: 13rem;
+
+  background-image: url(/assets/Hero.png);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+}
+
+.heroTextContainer {
+  font-family: var(--primary-font);
+  padding: 4% 6%;
+}
+
+.heroTextTitle {
+  color: var(--primary-color);
+  font-size: 2.62rem;
+}
+
+.heroTextSubtitle {
+  color: rgba(221, 221, 221, 0.9);
+  font-size: 1.12rem;
+}
+
+@media (max-width: 569px) {
+  .homeHero {
+    height: 8rem;
+    align-items: center;
+  }
+
+  .heroTextContainer {
+    text-align: center;
+    padding: 1em;
+    margin: auto 0;
+  }
+
+  .heroTextTitle {
+    font-size: 1.7rem;
+  }
+
+  .heroTextSubtitle {
+    font-size: 0.7rem;
+  }
+}
