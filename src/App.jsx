@@ -1,6 +1,6 @@
-import "./styles/styles.css";
-import "./styles/header.css";
-import "./styles/footer.css";
+
+import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function SearchForm() {
   return (
@@ -57,27 +57,7 @@ function SearchForm() {
 function App() {
   return (
     <>
-      <header>
-        <img
-          className="header__logo"
-          src="/assets/logocolor.png"
-          alt="Myesports logo"
-        />
-        <nav className="header__menu">
-          <input
-            className="header__menu__searchbar"
-            type="search"
-            placeholder="Search..."
-            alt="Search bar"
-          />
-          <a className="header__menu__link" href="index.html" alt="Home page">
-            Home
-          </a>
-          <a id="login-button" className="header__menu__link" alt="Login page">
-            Log in
-          </a>
-        </nav>
-      </header>
+      <Header />
       <main>
         <section className="hero">
           <div className="hero-text">
@@ -95,21 +75,7 @@ function App() {
         </section>
         <section className="hero-spacer"></section>
       </main>
-      <footer>
-        <img
-          className="footer__logo"
-          src="/assets/Logowhite.png"
-          alt="Myesports logo"
-        />
-        <div className="footer__links">
-          <a className="footer__links__link" alt="About page">
-            About
-          </a>
-          <a className="footer__links__link" alt="Contact page">
-            Contact
-          </a>
-        </div>
-      </footer>
+      <Footer />
     </>
   );
 }

@@ -11,20 +11,20 @@ header {
     border: 1px solid rgba(136, 128, 128, 0.7);
 }
 
-.header__logo {
+.headerLogo {
     min-width: 100px;
     max-width: 8em;
     margin: 1em;
 }
 
-.header__menu {
+.headerMenu {
     display: flex;
     gap: 1em;
     align-items: center;
     margin: 1em;
 }
 
-.header__menu__searchbar {
+.headerMenuSearchbar {
     background-color: var(--background-color);
     color: var(--quaternary-color);
     padding: 0.5rem 1rem;
@@ -34,7 +34,7 @@ header {
 
 }
 
-.header__menu__searchbar::placeholder{
+.headerMenuSearchbar::placeholder{
     font-family: var(--primary-font);
     font-size: 1rem;
     text-align: end;
@@ -42,11 +42,11 @@ header {
 }
 
 
-.header__menu__searchbar:hover {
+.headerMenuSearchbar:hover {
     background-color: #dadce0
 }
 
-.header__menu__link {
+.headerMenuLink {
     font-family: var(--primary-font);
     font-size: 1.25rem;
     font-weight: 800;
@@ -55,13 +55,17 @@ header {
     cursor: pointer;
 }
 
-#login-button {
+.loginButton {
     background-color: var(--secondary-color);
     color: var(--primary-color);
     padding: 0.4rem;
     border-radius: 10px;
     text-align: center;
     width: 6rem;
+    font-family: var(--primary-font);
+    font-size: 1.25rem;
+    font-weight: 800;
+    cursor: pointer;
 }
 
 @media (max-width: 569px) {
@@ -70,21 +74,21 @@ header {
         height: 3rem;
     }
 
-    .header__menu__link{
+    .headerMenuLink {
         font-size: 0.7rem;
     }
 
-    .header__menu__searchbar{
+    .headerMenuSearchbar{
         font-size: 0.7rem;
         width: 5em;
     }
 
-    .header__menu__searchbar::placeholder{
+    .headerMenuSearchbar::placeholder{
         color: transparent;
         margin: 0;
     }
 
-    #login-button{
+    .loginButton {
         width: 3rem;
     }
 
