@@ -1,0 +1,14 @@
+.homeCardContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  margin: 4% 0;
+}
+
+@media (max-width: 569px) {
+  .homeCardContainer {
+    margin: 2em 0em;
+  }
+}
