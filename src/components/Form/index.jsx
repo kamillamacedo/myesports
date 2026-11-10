@@ -1,58 +1,58 @@
 import styles from "./Form.module.css";
 
+function InputGroup({id, label, ...props }){
+  return (
+    <div className={styles.inputGroup}>
+      <label htmlFor={id} className={styles.inputGroupLabel}>
+        {label}
+      </label>
+
+      <input
+        id={id}
+        name={id}
+        className={styles.inputGroupInput}
+        {...props}
+      />
+    </div>
+  )
+}
+
+
 export function OptionsForm() {
   return (
     <form className={styles.homeCard}>
       <fieldset>
         <legend className={styles.homeCardTitle}>Select your options</legend>
 
-        <div className={styles.inputGroup}>
-          <label htmlFor="sport" className={styles.inputGroupLabel}>
-            Sport
-          </label>
-          <input
-            id="sport"
-            className={styles.inputGroupInput}
-            type="text"
-            placeholder="Which game would you like to follow?"
-          />
-        </div>
+        <InputGroup
+          id="sport"
+          label="Sport"
+          type="text"
+          placeholder="Which game would you like to follow?"
+          required
+        />
 
-        <div className={styles.inputGroup}>
-          <label htmlFor="championship" className={styles.inputGroupLabel}>
-            Championship
-          </label>
-          <input
-            id="championship"
-            className={styles.inputGroupInput}
-            type="text"
-            placeholder="Select a championship (optional)"
-          />
-        </div>
+        <InputGroup
+          id="championship"
+          label="Championship"
+          type="text"
+          placeholder="Select a championship (optional)"
+        />
 
-        <div className={styles.inputGroup}>
-          <label htmlFor="team" className={styles.inputGroupLabel}>
-            Team
-          </label>
-          <input
-            id="team"
-            className={styles.inputGroupInput}
-            type="text"
-            placeholder="Select a team (optional)"
-          />
-        </div>
+        <InputGroup
+          id="team"
+          label="Team"
+          type="text"
+          placeholder="Select a team (optional)"
+        />
 
-        <div className={styles.inputGroup}>
-          <label htmlFor="player" className={styles.inputGroupLabel}>
-            Player
-          </label>
-          <input
-            id="player"
-            className={styles.inputGroupInput}
-            type="text"
-            placeholder="Select a player (optional)"
-          />
-        </div>
+        <InputGroup
+          id="player"
+          label="Player"
+          type="text"
+          placeholder="Select a player (optional)"
+        />
+
       </fieldset>
 
       <button className={styles.homeCardButton} type="submit">
