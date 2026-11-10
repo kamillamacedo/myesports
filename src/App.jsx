@@ -14,7 +14,6 @@ function App() {
         <section className={styles.homeCardContainer}>
           <OptionsForm />
         </section>
-        <section className="hero-spacer"></section>
       </main>
       <Footer />
     </>
