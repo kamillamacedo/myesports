@@ -1,9 +1,6 @@
 import styles from "./App.module.css";
 
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-import { HomeHero } from "./components/Hero";
-import { OptionsForm } from "./components/Form";
+import { Header, Footer, HomeHero, OptionsForm } from "./components";
 
 function App() {
   return (
